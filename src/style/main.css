@@ -1,54 +1,151 @@
 body {
-    margin: 0;
-    padding: 0;
-    color: #787878;
-    font-size: 20px;
+  margin: 0;
+  padding: 0;
+  color: #787878;
+  font-size: 20px;
 }
-.container { padding: 20px;}
-.separator {
-    width: 100%;
-    height: 26px;
-    clear: both;
-    border-top: 1px solid #cccccc;
-    border-bottom: 1px solid #cccccc;
-    background-color: #ecedef;
-}
-.title { color: #0195db; font-size: 18px; padding-top: 10px;padding-bottom: 20px;}
-table {
-    width: 100%;
-    margin: auto;
-    text-align: center;
-    vertical-align: middle;
-    color: #181b1a;
-    border: 1px solid #cccccc;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    -ms-border-radius: 5px;
-    -o-border-radius: 5px;
-    border-radius: 5px;
-}
-table th { color: #0195db; height: 52px; font-size: 16px; font-weight: normal;}
-table td { font-size: 14px;}
-table tr:nth-child(2n+1) { background-color: #f6fafe;}
-table tr { height: 48px;padding-left: 5px;}
-table tr td:first-child { width: 48px;}
-table tr td p { color: #fff;width: 36px; height: 36px; margin: auto;line-height: 2.5}
-table tr td:nth-child(2) { min-width: 50%}
-.letter-table tr td p { background: #34b4ec;}
-.letter-table tr+tr+tr td:first-child p { background: #1dce00;}
-.letter-table tr+tr+tr+tr td:first-child p { background: #ffb416;}
-.letter-table tr+tr+tr+tr+tr td:first-child p { background: #f4356e;}
-.letter-table tr+tr+tr+tr+tr+tr td:first-child p { background: #06df8e;}
-.letter-table tr+tr+tr+tr+tr+tr+tr td:first-child p { background: #ff5f3c;}
-.letter-table tr+tr+tr+tr+tr+tr+tr+tr td:first-child p { background: #ff7e01;}
-.letter-table tr+tr+tr+tr+tr+tr+tr+tr+tr td:first-child p { background: #febe04;}
-.letter-table tr+tr+tr+tr+tr+tr+tr+tr+tr+tr td:first-child p { background: #bd6aff;}
-.letter-table tr+tr+tr+tr+tr+tr+tr+tr+tr+tr+tr td:first-child p { background: #2780dc;}
-.rank-list tr td p { background: #ef0135;}
-.rank-list tr+tr+tr td:first-child p { background: #ff7e01;}
-.rank-list tr+tr+tr+tr td:first-child p { background: #30be7f;}
-.rank-list tr+tr+tr+tr+tr td:first-child p { background: #0097db;}
 
-.select-box { text-align: center; padding: 20px; color: #fff;outline: none;}
-.select-box select { border: 0; font-size: 16px; background: #0195db; color: #fff; padding: 10px 20px; }
-.select-box select option { background-color: #00a5f2;}
+.container {
+  padding: 20px;
+}
+
+.separator {
+  width: 100%;
+  height: 26px;
+  clear: both;
+  border-top: 1px solid #cccccc;
+  border-bottom: 1px solid #cccccc;
+  background-color: #ecedef;
+}
+
+.title {
+  color: #0195db;
+  font-size: 18px;
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+
+table {
+  width: 100%;
+  margin: auto;
+  text-align: center;
+  vertical-align: middle;
+  color: #181b1a;
+  border: 1px solid #cccccc;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+}
+
+table th {
+  color: #0195db;
+  height: 52px;
+  font-size: 16px;
+  font-weight: normal;
+}
+
+table td {
+  font-size: 14px;
+}
+
+table tr:nth-child(2n+1) {
+  background-color: #f6fafe;
+}
+
+table tr {
+  height: 48px;
+  padding-left: 5px;
+}
+
+table tr td:first-child {
+  width: 48px;
+}
+
+table tr td p {
+  color: #fff;
+  width: 36px;
+  height: 36px;
+  margin: auto;
+  line-height: 2.5
+}
+
+table tr td:nth-child(2) {
+  min-width: 50%
+}
+
+.letter-table tr td p {
+  background: #34b4ec;
+}
+
+.letter-table tr+tr+tr td:first-child p {
+  background: #1dce00;
+}
+
+.letter-table tr+tr+tr+tr td:first-child p {
+  background: #ffb416;
+}
+
+.letter-table tr+tr+tr+tr+tr td:first-child p {
+  background: #f4356e;
+}
+
+.letter-table tr+tr+tr+tr+tr+tr td:first-child p {
+  background: #06df8e;
+}
+
+.letter-table tr+tr+tr+tr+tr+tr+tr td:first-child p {
+  background: #ff5f3c;
+}
+
+.letter-table tr+tr+tr+tr+tr+tr+tr+tr td:first-child p {
+  background: #ff7e01;
+}
+
+.letter-table tr+tr+tr+tr+tr+tr+tr+tr+tr td:first-child p {
+  background: #febe04;
+}
+
+.letter-table tr+tr+tr+tr+tr+tr+tr+tr+tr+tr td:first-child p {
+  background: #bd6aff;
+}
+
+.letter-table tr+tr+tr+tr+tr+tr+tr+tr+tr+tr+tr td:first-child p {
+  background: #2780dc;
+}
+
+.rank-list tr td p {
+  background: #ef0135;
+}
+
+.rank-list tr+tr+tr td:first-child p {
+  background: #ff7e01;
+}
+
+.rank-list tr+tr+tr+tr td:first-child p {
+  background: #30be7f;
+}
+
+.rank-list tr+tr+tr+tr+tr td:first-child p {
+  background: #0097db;
+}
+
+.select-box {
+  text-align: center;
+  padding: 20px;
+  color: #fff;
+  outline: none;
+}
+
+.select-box select {
+  border: 0;
+  font-size: 16px;
+  background: #0195db;
+  color: #fff;
+  padding: 10px 20px;
+}
+
+.select-box select option {
+  background-color: #00a5f2;
+}
