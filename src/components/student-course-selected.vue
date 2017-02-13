@@ -78,7 +78,7 @@
 import Highcharts from 'highcharts';
 
 export default {
-  name: 'device-count',
+  name: 'student-course-selected',
   title: '学生选课',
   mounted() {
     Highcharts.chart('rank-chart', {

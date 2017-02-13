@@ -152,7 +152,7 @@
 import Highcharts from 'highcharts';
 
 export default {
-  name: 'device-count',
+  name: 'teacher-expend',
   title: '教师消费',
   mounted() {
     Highcharts.chart('spread-chart', {

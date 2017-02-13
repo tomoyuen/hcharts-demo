@@ -127,18 +127,13 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-  h1, h2, h3, h4, h5, h6 {
-    margin: 0;
-    padding: 0;
-  }
-  body { background-color: #fefefe; font-size: 14px;}
   .logen {
     color: #212121;
     margin: 20px;
-  }
-  .logen .data {
-    font-size: 20px;
-    color: #e96841;
+    .data {
+      font-size: 20px;
+      color: #e96841;
+    }
   }
   .btm-nav {
     margin: 0 auto 20px;
@@ -147,83 +142,97 @@ export default {
     text-align: center;
     font-size: 100%;
     color: #787878;
+    a {
+      text-decoration: none;
+      color: #787878;
+    }
+    ul {
+      margin: 0;
+      padding: 0;
+      li {
+        display: inline-block;
+        color: #787878;
+        vertical-align: top;
+        a {
+          display: block;
+          p {
+            width: 60px;
+            font-size: 14px;
+          }
+        }
+        .data {
+          display: block;
+          padding: 8px 20px;
+          border-radius: 5px;
+          font-size: 120%;
+          color: #fff;
+          background: #46a35c;
+          padding-bottom: 10px;
+        }
+        &:nth-child(2) .data {
+          background-color: #d8271d;
+        }
+        &:nth-child(3) .data {
+          background-color: #ffb800;
+        }
+        &:nth-child(4) .data {
+          background-color: #f48221;
+        }
+      }
+    }
   }
-  .btm-nav a {
-    text-decoration: none;
-    color: #787878;
+  .countdown-box {
+    .title {
+      padding: 20px 0;
+      margin: 0;
+      font-size: 18px;
+      border-top: 1px solid #cccccc;
+      border-bottom: 1px solid #cccccc;
+      color: #0168b7;
+      background-color: #f6f9fe;
+      text-align: center;
+    }
+    .book-list li {
+      padding: 10px 20px 14px;
+      list-style: none;
+      border-bottom: 1px solid #cccccc;
+      display: block;
+      clear: both;
+      &:nth-child(2n) {
+        background-color: #f6f9fe;
+      }
+      .rank {
+        color: #fff;
+        background-color: #ef0135;
+        float: left;
+        font-size: 14px;
+        width: 36px;
+        height: 36px;
+        text-align: center;
+        line-height: 2.5;
+        margin-right: 20px;
+        border-radius: 5px;
+      }
+      &:nth-child(2) .rank {
+        background-color: #ff7d00;
+      }
+      &:nth-child(3) .rank {
+        background-color: #31bd80;
+      }
+      &:nth-child(4) .rank {
+        background-color: #1fc2fd;
+      }
+      .book {
+        color: #222;
+        padding-bottom: 2px;
+        font-size: 14px;
+      }
+      .date {
+        color: #666;
+        font-size: 14px;
+      }
+    }
   }
-  .btm-nav ul { margin: 0;padding: 0}
-  .btm-nav ul li {
-    display: inline-block;
-    color: #787878;
-    vertical-align: top;
-  }
-  .btm-nav ul li a {
-    display: block;
-  }
-  .btm-nav ul li a p {
-    width: 60px;
-    font-size: 14px;
-  }
-  .btm-nav ul li .data {
-    display: block;
-    padding: 8px 20px;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    -ms-border-radius: 5px;
-    -o-border-radius: 5px;
-    border-radius: 5px;
-    font-size: 120%;
-    color: #fff;
-    background: #46a35c;
-  }
-  .btm-nav ul li+li .data {background-color: #d8271d;}
-  .btm-nav ul li+li+li .data {background-color: #ffb800;}
-  .btm-nav ul li+li+li+li .data {background-color: #f48221;}
-  .btm-nav .data {
-    padding-bottom: 10px;
-  }
-  .countdown-box .title {
-    padding: 20px 0;
-    margin: 0;
-    font-size: 18px;
-    border-top: 1px solid #cccccc;
-    border-bottom: 1px solid #cccccc;
-    color: #0168b7;
-    background-color: #f6f9fe;
-    text-align: center;
-  }
-  .countdown-box .book-list li {
-    padding: 10px 20px 14px;
-    list-style: none;
-    border-bottom: 1px solid #cccccc;
-    display: block;
-    clear: both;
-  }
-  .countdown-box .book-list li:nth-child(2n) {
-    background-color: #f6f9fe;
-  }
-  .countdown-box .book-list li .rank {
-    color: #fff;
-    background-color: #ef0135;
-    float: left;
-    font-size: 14px;
-    width: 36px;
-    height: 36px;
-    text-align: center;
-    line-height: 2.5;
-    margin-right: 20px;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    -ms-border-radius: 5px;
-    -o-border-radius: 5px;
-    border-radius: 5px;
-  }
-  .countdown-box .book-list li+li .rank { background-color: #ff7d00;}
-  .countdown-box .book-list li+li+li .rank { background-color: #31bd80;}
-  .countdown-box .book-list li+li+li+li .rank { background-color: #1fc2fd;}
-  .countdown-box .book-list li .book { color: #222;padding-bottom: 2px; font-size: 14px;}
-  .countdown-box .book-list li .date { color: #666666; font-size: 14px;}
   #canvasDiv a {
     color: #e55e3a;
     text-decoration: none;

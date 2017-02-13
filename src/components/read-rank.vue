@@ -19,31 +19,31 @@
         </li>
         <li>
           <div class="rank">2</div>
-          <h3 class="school">3医学院</h2>
-            <div class="name">张同学</div>
-            <div class="read-mount">总阅读:
-              <span class="data">534</span>本
-            </div>
-          </li>
-          <li>
-            <div class="rank">3</div>
-            <h3 class="school">3学院</h3>
-            <div class="name">张同学</div>
-            <div class="read-mount">总阅读:
-              <span class="data">532</span>本
-            </div>
-          </li>
-          <li>
-            <div class="rank">4</div>
-            <h3 class="school">4学院</h3>
-            <div class="name">张同学</div>
-            <div class="read-mount">总阅读:
-              <span class="data">531</span>本
-            </div>
-          </li>
-        </ul>
-      </div>
+          <h3 class="school">3学院</h3>
+          <div class="name">张同学</div>
+          <div class="read-mount">总阅读:
+            <span class="data">534</span>本
+          </div>
+        </li>
+        <li>
+          <div class="rank">3</div>
+          <h3 class="school">3学院</h3>
+          <div class="name">张同学</div>
+          <div class="read-mount">总阅读:
+            <span class="data">532</span>本
+          </div>
+        </li>
+        <li>
+          <div class="rank">4</div>
+          <h3 class="school">4学院</h3>
+          <div class="name">张同学</div>
+          <div class="read-mount">总阅读:
+            <span class="data">531</span>本
+          </div>
+        </li>
+      </ul>
     </div>
+  </div>
 </template>
 
 <script>

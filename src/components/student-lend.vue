@@ -139,7 +139,7 @@
 import Highcharts from 'highcharts';
 
 export default {
-  name: 'device-count',
+  name: 'student-lend',
   title: '学生借阅',
   mounted() {
     Highcharts.chart('lend-book-data', {

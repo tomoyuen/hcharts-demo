@@ -6,7 +6,7 @@
 import Highcharts from 'highcharts';
 
 export default {
-  name: 'device-count',
+  name: 'version-count',
   title: '版本访问统计',
   mounted() {
     Highcharts.chart('container', {
@@ -67,7 +67,3 @@ export default {
   },
 };
 </script>
-
-<!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
-</style>

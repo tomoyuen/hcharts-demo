@@ -81,7 +81,7 @@
 import Highcharts from 'highcharts';
 
 export default {
-  name: 'device-count',
+  name: 'report-msg-weekly',
   title: '项目排行',
   mounted() {
     Highcharts.chart('canvasDiv', {

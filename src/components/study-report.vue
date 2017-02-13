@@ -32,7 +32,7 @@
 import Highcharts from 'highcharts';
 
 export default {
-  name: 'device-count',
+  name: 'study-report',
   title: '学习报告',
   mounted() {
     Highcharts.chart('my-data', {

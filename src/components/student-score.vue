@@ -141,7 +141,7 @@
 import Highcharts from 'highcharts';
 
 export default {
-  name: 'device-count',
+  name: 'student-score',
   title: '学生成绩',
   mounted() {
     Highcharts.chart('good-student-data', {
