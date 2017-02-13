@@ -32,10 +32,6 @@ table {
   vertical-align: middle;
   color: #181b1a;
   border: 1px solid #cccccc;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  -ms-border-radius: 5px;
-  -o-border-radius: 5px;
   border-radius: 5px;
 }
 

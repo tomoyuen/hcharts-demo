@@ -53,7 +53,7 @@ export default {
   name: 'device-count',
   title: '阅读排行',
   mounted() {
-    Highcharts.chart('container', {
+    Highcharts.chart('canvasDiv', {
       chart: {
         height: document.documentElement.clientHeight * 0.7,
         plotBackgroundColor: null,

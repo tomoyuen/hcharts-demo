@@ -3,7 +3,7 @@
     <div class="study-point">
       <div class="container">
         <div class="title">
-          <p>我的学时学分<img src="img/my-credit.png" alt=""></p>
+          <p>我的学时学分<img src="../assets/my-credit.png" alt=""></p>
         </div>
         <div>必修学分  <b class="data">18/32</b>  分</div>
         <div>选修学分  <b class="data">24/50</b>  分</div>
@@ -13,7 +13,7 @@
     <div class="gpa">
       <div class="container">
         <div class="title">
-          <p>我的绩点<img src="img/my-gpa.png" alt=""></p>
+          <p>我的绩点<img src="../assets/my-gpa.png" alt=""></p>
         </div>
         <div>总绩点<b class="data">18</b></div>
         <div>平均绩点<b class="data">4.5</b></div>

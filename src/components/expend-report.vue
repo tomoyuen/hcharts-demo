@@ -3,8 +3,8 @@
     <div class="yesterday-expend">
       <div class="container">
         <div class="title">
-          <img src="img/u13.png" alt="" />
-          <p>昨日消费（元）<img src="img/yesterday-expend.png" alt="" /></p>
+          <img src="../assets/u13.png" alt="" />
+          <p>昨日消费（元）<img src="../assets/yesterday-expend.png" alt="" /></p>
         </div>
         <div class="data">100.50</div>
         <div class="date">数据截止日期：2014-12-15</div>
@@ -13,7 +13,7 @@
     <div class="last-week-expend">
       <div class="container">
         <div class="title">
-          <p>上周消费（元）<img src="img/last-week-expend.png" alt="" /></p>
+          <p>上周消费（元）<img src="../assets/last-week-expend.png" alt="" /></p>
         </div>
         <div class="data">100.50</div>
         <div class="date">数据截止日期：2014-12-15</div>
@@ -23,7 +23,7 @@
     <div class="total-expend">
       <div class="container">
         <div class="title">
-          <p>总消费(元)<img src="img/total-expend.png" alt="" /></p>
+          <p>总消费(元)<img src="../assets/total-expend.png" alt="" /></p>
         </div>
         <div class="data">5,100.45</div>
         <div class="date">数据截止日期：2014-12-15</div>
