@@ -1,7 +1,6 @@
 /* eslint global-require:off */
 import Vue from 'vue';
 import Router from 'vue-router';
-import DeviceCount from '../components/device-count';
 
 Vue.use(Router);
 
@@ -10,7 +9,9 @@ export default new Router({
     {
       path: '/',
       name: 'DeviceCount',
-      component: DeviceCount,
+      component: (resolve) => {
+        require.ensure([], () => resolve(require('../components/device-count')));
+      },
     }, {
       path: '/downloadCount',
       name: 'downloadCount',

@@ -163,26 +163,26 @@ export default {
           font-size: 120%;
           color: #4daf7b;
         }
+        &:nth-child(2) {
+          border-top: 6px solid #e7653f;
+          color: #e7653f;
+        }
+        &:nth-child(3) {
+          border-top: 6px solid #ffb800;
+          color: #ffb800;
+        }
+        &:nth-child(4) {
+          border-top: 6px solid #00bff3;
+          color: #00bff3;
+        }
+        &:nth-child(5) {
+          border-top: 6px solid #ffbe73;
+          color: #ffbe73;
+        }
       }
     }
-  }
-  .btm-nav ul li+li {
-    border-top: 6px solid #e7653f;
-  }
-  .btm-nav ul li+li div {color: #e7653f;}
-
-  .btm-nav ul li+li+li {
-    border-top: 6px solid #ffb800;
-  }
-  .btm-nav ul li+li+li div {color: #ffb800;}
-  .btm-nav ul li+li+li+li { border-top: 6px solid #00bff3;}
-  .btm-nav ul li+li+li+li div { color: #00bff3;}
-  .btm-nav ul li+li+li+li+li {
-    border-top: 6px solid #ffbe73;
-  }
-  .btm-nav ul li+li+li+li+li div {color: #ffbe73;}
-
-  .btm-nav .data {
-    padding-bottom: 10px;
+    .data {
+      padding-bottom: 10px;
+    }
   }
 </style>

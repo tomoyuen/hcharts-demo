@@ -6,7 +6,7 @@
 import Highcharts from 'highcharts';
 
 export default {
-  name: 'device-count',
+  name: 'hot-rank',
   title: '热度排行',
   mounted() {
     Highcharts.chart('container', {

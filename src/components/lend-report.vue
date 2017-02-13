@@ -15,7 +15,7 @@
 import Highcharts from 'highcharts';
 
 export default {
-  name: 'device-count',
+  name: 'lend-report',
   title: '借阅报告',
   mounted() {
     Highcharts.chart('trend-chart', {

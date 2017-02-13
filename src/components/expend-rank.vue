@@ -8,7 +8,7 @@
     <div class="separator"></div>
     <div class="tuhao-box">
       <h2 class="title">校园十大土豪排行榜</h2>
-      <ui class="tuhao-list">
+      <ul class="tuhao-list">
         <li>
           <div class="rank">1</div>
           <h3 class="school">医学院</h3>
@@ -41,7 +41,7 @@
             <span class="data">324.05</span>元
           </div>
         </li>
-      </ui>
+      </ul>
     </div>
   </div>
 </template>
@@ -111,68 +111,87 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-  h1,h2,h3,h4,h5,h6 {
-    margin: 0;
-    padding: 0;
-    font-size: 14px;
-  }
   .chart {
     width: 100%;
     border-bottom: 1px solid #cccccc;
     clear: both;
     text-align: center;
+    .achieve {
+      color: #fe3200;
+      font-size: 22px;
+    }
+    .data {
+      color: #ff8800;
+      font-size: 20px;
+    }
   }
-  .chart .achieve { color: #fe3200; font-size: 22px;}
-  .chart .data { color: #ff8800; font-size: 20px;}
   .separator {
     width: 100%;
     height: 26px;
     clear: both;
     background-color: #ecedef;
   }
-  .tuhao-box .title {
-    padding: 20px 0;
-    margin: 0;
-    border-top: 1px solid #cccccc;
-    border-bottom: 1px solid #cccccc;
-    font-size: 18px;
-    color: #0168b7;
-    background-color: #f6f9fe;
-    text-align: center;
+  .tuhao-box {
+    .title {
+      padding: 20px 0;
+      margin: 0;
+      border-top: 1px solid #cccccc;
+      border-bottom: 1px solid #cccccc;
+      font-size: 18px;
+      color: #0168b7;
+      background-color: #f6f9fe;
+      text-align: center;
+    }
+    .tuhao-list li {
+      padding: 10px 20px 30px;
+      list-style: none;
+      border-bottom: 1px solid #cccccc;
+      display: block;
+      clear: both;
+      &:nth-child(2n) {
+        background-color: #f6f9fe;
+      }
+      .rank {
+        color: #fff;
+        background-color: #ef0135;
+        float: left;
+        font-size: 14px;
+        width: 36px;
+        height: 36px;
+        text-align: center;
+        line-height: 2.5;
+        margin-right: 20px;
+        border-radius: 5px;
+      }
+      &:nth-child(2) .rank {
+        background-color: #ff7d00;
+      }
+      &:nth-child(3) .rank {
+        background-color: #31bd80;
+      }
+      &:nth-child(4) .rank {
+        background-color: #1fc2fd;
+      }
+      .name, .expand-mount {
+        color: #666;
+      }
+      .name {
+        float: left;
+      }
+      .expand-mount {
+        float: right;
+      }
+      .school {
+        color: #222;
+        padding-bottom: 2px;
+        font-weight: normal;
+      }
+    }
+    .tuhao-list .data {
+      color: #ff0000;
+    }
   }
-  .tuhao-box .tuhao-list li {
-    padding: 10px 20px 30px;
-    list-style: none;
-    border-bottom: 1px solid #cccccc;
-    display: block;
-    clear: both;
+  .huge {
+    font-size: 36px;
   }
-  .tuhao-box .tuhao-list li:nth-child(2n) {
-    background-color: #f6f9fe;
-  }
-  .tuhao-box .tuhao-list li .rank {
-    color: #fff;
-    background-color: #ef0135;
-    float: left;
-    font-size: 14px;
-    width: 36px;
-    height: 36px;
-    text-align: center;
-    line-height: 2.5;
-    margin-right: 20px;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    -ms-border-radius: 5px;
-    -o-border-radius: 5px;
-    border-radius: 5px;
-  }
-  .tuhao-box .tuhao-list li+li .rank { background-color: #ff7d00;}
-  .tuhao-box .tuhao-list li+li+li .rank { background-color: #31bd80;}
-  .tuhao-box .tuhao-list li+li+li+li .rank { background-color: #1fc2fd;}
-  .tuhao-box .tuhao-list li .school { color: #222;padding-bottom: 2px;font-weight: normal;}
-  .tuhao-box .tuhao-list li .name, .tuhao-box .tuhao-list li .expand-mount { color: #666666;}
-  .tuhao-list .data { color: #ff0000;}
-  .tuhao-box .tuhao-list li .name { float: left;}
-  .tuhao-box .tuhao-list li .expand-mount { float: right;}
-  .huge { font-size: 36px;}
 </style>

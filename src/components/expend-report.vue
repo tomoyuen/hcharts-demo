@@ -42,7 +42,7 @@
 import Highcharts from 'highcharts';
 
 export default {
-  name: 'device-count',
+  name: 'expend-report',
   title: '消费报告',
   mounted() {
     Highcharts.chart('canvasDiv', {
@@ -102,21 +102,32 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-  .container { padding: 20px;}
-  img {width: 24px;height: 24px;}
-  .date { float: right;}
+  .container {
+    padding: 20px;
+  }
+  img {
+    width: 24px;
+    height: 24px;
+  }
+  .date {
+    float: right;
+  }
   .yesterday-expend, .last-week-expend, .total-expend {
     padding-bottom: 20px;
     width: 100%;
+    .data {
+      font-size: 48px;
+      margin: 40px auto;
+      clear: both;
+      color: #f4342f;
+    }
   }
-  .yesterday-expend .data, .last-week-expend .data, .total-expend .data {
-    font-size: 48px;
-    margin: 40px auto;
-    clear: both;
-    color: #f4342f;
+  p {
+    line-height: 2;
   }
-  p {line-height: 2;}
-  .title p img { float:right;}
+  .title p img {
+    float:right;
+  }
   .separator {
     width: 100%;
     height: 26px;
@@ -128,9 +139,14 @@ export default {
   .yesterday-expend {
     color: #fff;
     background-color: #fd8700;
+    .title > img {
+      float: left;
+      padding-right: 10px;
+    }
+    .data {
+      color: #fff;
+    }
   }
-  .yesterday-expend .title>img {float: left; padding-right: 10px;}
-  .yesterday-expend .data {color: #fff;}
   .weekly-expend .title { display: block;clear: both;}
   #canvasDiv {
     padding-top: 12px;
