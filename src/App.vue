@@ -13,8 +13,6 @@ export default {
 </script>
 
 <style>
-@import './style/main.css';
-
 * { margin: 0px; padding: 0px; }
 body {
   background: #383c55;
@@ -25,11 +23,12 @@ body {
 div.screen{
   width: 320px;
   height: 560px;
-  overflow: hidden;
+  overflow-x: hidden;
+  overflow-y: scroll;
   position: absolute;
   top: 50px;
   left: 50%;
   margin-left: -160px;
-  background: #31558a;
+  background: #fff;
 }
 </style>
