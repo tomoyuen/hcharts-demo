@@ -136,13 +136,11 @@
 </template>
 
 <script>
-import Highcharts from 'highcharts';
-
 export default {
   name: 'teacher-lend',
   title: '教师借阅',
   mounted() {
-    Highcharts.chart('lend-book-data', {
+    this.$root.hcharts.chart('lend-book-data', {
       chart: {
         plotBackgroundColor: null,
         plotBorderWidth: 0,
@@ -182,7 +180,7 @@ export default {
       }],
       exporting: { enabled: false },
     });
-    Highcharts.chart('rank-chart', {
+    this.$root.hcharts.chart('rank-chart', {
       chart: { type: 'bar' },
       title: { text: null },
       xAxis: {

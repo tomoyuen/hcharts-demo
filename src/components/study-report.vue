@@ -29,13 +29,11 @@
 </template>
 
 <script>
-import Highcharts from 'highcharts';
-
 export default {
   name: 'study-report',
   title: '学习报告',
   mounted() {
-    Highcharts.chart('my-data', {
+    this.$root.hcharts.chart('my-data', {
       chart: {
         polar: true,
         type: 'line',
@@ -87,7 +85,7 @@ export default {
       }],
       exporting: { enabled: false },
     });
-    Highcharts.chart('my-grade', {
+    this.$root.hcharts.chart('my-grade', {
       chart: {
         type: 'column',
       },
@@ -153,7 +151,7 @@ export default {
       ],
       exporting: { enabled: false },
     });
-    Highcharts.chart('study-trend', {
+    this.$root.hcharts.chart('study-trend', {
       chart: {
         type: 'area',
       },

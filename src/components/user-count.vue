@@ -3,13 +3,11 @@
 </template>
 
 <script>
-import Highcharts from 'highcharts';
-
 export default {
   name: 'user-count',
   title: '用户统计',
   mounted() {
-    Highcharts.chart('container', {
+    this.$root.hcharts.chart('container', {
       colors: ['#35b3ed', '#1dcd00', '#ffb518', '#f5326e', '#06dd8f', '#ff5d3c', '#ff7d01', '#febe04', '#bd6aff', '#2780dc'],
       title: {
         text: '访问趋势',

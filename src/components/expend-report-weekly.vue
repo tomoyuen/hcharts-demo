@@ -12,13 +12,11 @@
 </template>
 
 <script>
-import Highcharts from 'highcharts';
-
 export default {
   name: 'expend-reports-weekly',
   title: '消费报告',
   mounted() {
-    Highcharts.chart('trend-chart', {
+    this.$root.hcharts.chart('trend-chart', {
       colors: ['#0295db'],
       chart: {
         type: 'line',
@@ -59,7 +57,7 @@ export default {
       }],
       exporting: { enabled: false },
     });
-    Highcharts.chart('rank-chart', {
+    this.$root.hcharts.chart('rank-chart', {
       chart: { type: 'bar' },
       title: {
         text: '各学生消费总额排行',
@@ -127,7 +125,7 @@ export default {
         }],
       }],
     });
-    Highcharts.chart('average-chart', {
+    this.$root.hcharts.chart('average-chart', {
       chart: {
         type: 'column',
       },

@@ -3,13 +3,11 @@
 </template>
 
 <script>
-import Highcharts from 'highcharts';
-
 export default {
   name: 'hot-rank',
   title: '热度排行',
   mounted() {
-    Highcharts.chart('container', {
+    this.$root.hcharts.chart('container', {
       chart: {
         type: 'column',
         margin: [50, 50, 100, 80],

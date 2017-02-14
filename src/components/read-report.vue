@@ -55,13 +55,11 @@
 </template>
 
 <script>
-import Highcharts from 'highcharts';
-
 export default {
   name: 'device-count',
   title: '项目排行',
   mounted() {
-    Highcharts.chart('canvasDiv', {
+    this.$root.hcharts.chart('canvasDiv', {
       chart: {
         height: document.documentElement.clientHeight * 0.7,
         plotBackgroundColor: null,

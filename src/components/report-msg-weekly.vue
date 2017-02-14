@@ -78,13 +78,11 @@
 </template>
 
 <script>
-import Highcharts from 'highcharts';
-
 export default {
   name: 'report-msg-weekly',
   title: '项目排行',
   mounted() {
-    Highcharts.chart('canvasDiv', {
+    this.$root.hcharts.chart('canvasDiv', {
       colors: ['#0295db'],
       chart: {
         type: 'line',

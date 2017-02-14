@@ -3,13 +3,11 @@
 </template>
 
 <script>
-import Highcharts from 'highcharts';
-
 export default {
   name: 'version-count',
   title: '版本访问统计',
   mounted() {
-    Highcharts.chart('container', {
+    this.$root.hcharts.chart('container', {
       colors: ['#35b3ed', '#1dcd00', '#ffb518', '#f5326e', '#06dd8f', '#ff5d3c', '#ff7d01', '#febe04', '#bd6aff', '#2780dc'],
       chart: {
         type: 'column',
@@ -30,7 +28,7 @@ export default {
           enabled: true,
           style: {
             fontWeight: 'bold',
-            color: (Highcharts.theme && Highcharts.theme.textColor) || 'gray',
+            color: (this.$root.hcharts.theme && this.$root.hcharts.theme.textColor) || 'gray',
           },
         },
       },
@@ -51,7 +49,7 @@ export default {
           stacking: 'normal',
           dataLabels: {
             enabled: true,
-            color: (Highcharts.theme && Highcharts.theme.dataLabelsColor) || 'white',
+            color: (this.$root.hcharts.theme && this.$root.hcharts.theme.dataLabelsColor) || 'white',
           },
         },
       },

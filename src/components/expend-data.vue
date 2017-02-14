@@ -42,13 +42,11 @@
 </template>
 
 <script>
-import Highcharts from 'highcharts';
-
 export default {
   name: 'expend-data',
   title: '总消费',
   mounted() {
-    Highcharts.chart('expend-data-chart', {
+    this.$root.hcharts.chart('expend-data-chart', {
       chart: {
         height: document.documentElement.clientHeight - 150,
         plotBackgroundColor: null,

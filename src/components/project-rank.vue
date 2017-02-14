@@ -3,13 +3,11 @@
 </template>
 
 <script>
-import Highcharts from 'highcharts';
-
 export default {
   name: 'project-rank',
   title: '项目排行',
   mounted() {
-    Highcharts.chart('container', {
+    this.$root.hcharts.chart('container', {
       chart: {
         type: 'column',
         margin: [50, 50, 100, 80],

@@ -47,13 +47,11 @@
 </template>
 
 <script>
-import Highcharts from 'highcharts';
-
 export default {
   name: 'expend-rank',
   title: '消费排行',
   mounted() {
-    Highcharts.chart('canvasDiv', {
+    this.$root.hcharts.chart('canvasDiv', {
       chart: {
         height: document.documentElement.clientHeight * 0.7,
         plotBackgroundColor: null,

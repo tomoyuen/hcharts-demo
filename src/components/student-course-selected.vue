@@ -75,13 +75,11 @@
 </template>
 
 <script>
-import Highcharts from 'highcharts';
-
 export default {
   name: 'student-course-selected',
   title: '学生选课',
   mounted() {
-    Highcharts.chart('rank-chart', {
+    this.$root.hcharts.chart('rank-chart', {
       chart: { type: 'bar' },
       title: { text: null },
       xAxis: {

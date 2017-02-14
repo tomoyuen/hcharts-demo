@@ -39,13 +39,11 @@
 </template>
 
 <script>
-import Highcharts from 'highcharts';
-
 export default {
   name: 'expend-report',
   title: '消费报告',
   mounted() {
-    Highcharts.chart('canvasDiv', {
+    this.$root.hcharts.chart('canvasDiv', {
       colors: ['#0295db'],
       chart: {
         type: 'line',

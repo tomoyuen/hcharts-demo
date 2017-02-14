@@ -13,6 +13,11 @@
 <script>
 export default {
   name: 'app',
+  data() {
+    return {
+      prev: this.$root.links,
+    };
+  },
 };
 </script>
 
@@ -67,7 +72,6 @@ export default {
     height: 50px;
     border-radius: 50%;
     border: 1px solid #fff;
-    transform: translate3d(0, -50%, 0);
     opacity: .7;
     &:before, &:after {
       content: '';

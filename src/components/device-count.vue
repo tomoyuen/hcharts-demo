@@ -3,13 +3,11 @@
 </template>
 
 <script>
-import Highcharts from 'highcharts';
-
 export default {
   name: 'device-count',
   title: '终端统计',
   mounted() {
-    Highcharts.chart('container', {
+    this.$root.hcharts.chart('container', {
       chart: {
         type: 'column',
         margin: [50, 50, 100, 80],
@@ -76,7 +74,3 @@ export default {
   },
 };
 </script>
-
-<!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
-</style>

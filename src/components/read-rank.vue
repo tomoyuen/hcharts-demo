@@ -47,13 +47,11 @@
 </template>
 
 <script>
-import Highcharts from 'highcharts';
-
 export default {
   name: 'read-rank',
   title: '阅读排行',
   mounted() {
-    Highcharts.chart('canvasDiv', {
+    this.$root.hcharts.chart('canvasDiv', {
       chart: {
         height: document.documentElement.clientHeight * 0.7,
         plotBackgroundColor: null,

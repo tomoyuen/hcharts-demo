@@ -149,13 +149,11 @@
 </template>
 
 <script>
-import Highcharts from 'highcharts';
-
 export default {
   name: 'teacher-expend',
   title: '教师消费',
   mounted() {
-    Highcharts.chart('spread-chart', {
+    this.$root.hcharts.chart('spread-chart', {
       chart: {
         plotBackgroundColor: null,
         plotBorderWidth: 0,
@@ -195,7 +193,7 @@ export default {
       }],
       exporting: { enabled: false },
     });
-    Highcharts.chart('rank-chart', {
+    this.$root.hcharts.chart('rank-chart', {
       chart: { type: 'bar' },
       title: { text: null },
       xAxis: {

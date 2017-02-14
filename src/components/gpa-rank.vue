@@ -39,13 +39,11 @@
 </template>
 
 <script>
-import Highcharts from 'highcharts';
-
 export default {
   name: 'gpa-rank',
   title: '绩点排行',
   mounted() {
-    Highcharts.chart('canvasDiv', {
+    this.$root.hcharts.chart('canvasDiv', {
       chart: {
         height: document.documentElement.clientHeight * 0.7,
         plotBackgroundColor: null,
