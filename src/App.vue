@@ -1,12 +1,12 @@
 <template>
   <div class="viewport">
-    <i class="arrow prev"></i>
+    <router-link :to="{name: 'DeviceCount'}" class="arrow disabled prev"></router-link>
     <div class="screen">
       <div id="app">
         <router-view></router-view>
       </div>
     </div>
-    <i class="arrow next"></i>
+    <router-link :to="{name: 'downloadCount'}" class="arrow next"></router-link>
   </div>
 </template>
 
@@ -25,6 +25,12 @@ export default {
     margin: 0;
     padding: 0;
     font-size: 14px;
+  }
+  a {
+    text-decoration: none;
+    &:not(.disabled):hover {
+      opacity: 1;
+    }
   }
   :root {
     position: relative;
@@ -62,6 +68,7 @@ export default {
     border-radius: 50%;
     border: 1px solid #fff;
     transform: translate3d(0, -50%, 0);
+    opacity: .7;
     &:before, &:after {
       content: '';
       position: absolute;
