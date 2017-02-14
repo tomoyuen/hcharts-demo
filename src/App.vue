@@ -1,8 +1,12 @@
 <template>
-  <div class="screen">
-    <div id="app">
-      <router-view></router-view>
+  <div class="viewport">
+    <i class="arrow prev"></i>
+    <div class="screen">
+      <div id="app">
+        <router-view></router-view>
+      </div>
     </div>
+    <i class="arrow next"></i>
   </div>
 </template>
 
@@ -22,7 +26,8 @@ export default {
     padding: 0;
     font-size: 14px;
   }
-  body {
+  :root {
+    position: relative;
     background: #383c55;
     width: 100%;
     height: 100%;
@@ -40,9 +45,47 @@ export default {
     transform: translate3d(-50%, -50%, 0);
     background: #fff;
     box-sizing: inherit;
+    &::-webkit-scrollbar {
+      display:none
+    }
     @media (--small-viewport) {
       width: 100%;
       height: 100%;
+    }
+  }
+  .arrow {
+    position: absolute;
+    display: block;
+    top: 50%;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    transform: translate3d(0, -50%, 0);
+    &:before, &:after {
+      content: '';
+      position: absolute;
+      display: block;
+      height: 2px;
+      width: 20px;
+      background: #fff;
+    }
+    &:before {
+      top: 18px;
+      right: 12px;
+      transform: rotate(45deg);
+    }
+    &:after {
+      transform: rotate(-45deg);
+      top: 32px;
+      right: 12px;
+    }
+    &.prev {
+      left: 200px;
+      transform: rotate(180deg);
+    }
+    &.next {
+      right: 200px;
     }
   }
 </style>
