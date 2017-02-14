@@ -1,12 +1,12 @@
 <template>
   <div class="viewport">
-    <router-link :to="{name: 'DeviceCount'}" class="arrow disabled prev"></router-link>
+    <router-link :to="{name: this.prev}" class="arrow prev" :class="{'disabled': !this.prev}"></router-link>
     <div class="screen">
       <div id="app">
-        <router-view></router-view>
+        <router-view ref="mainChild"></router-view>
       </div>
     </div>
-    <router-link :to="{name: 'downloadCount'}" class="arrow next"></router-link>
+    <router-link :to="{name: this.next}" class="arrow next" :class="{'disabled': !this.next}"></router-link>
   </div>
 </template>
 
@@ -15,8 +15,23 @@ export default {
   name: 'app',
   data() {
     return {
-      prev: this.$root.links,
+      links: this.$root.links,
     };
+  },
+  computed: {
+    currentIndex() {
+      return this.links.indexOf(this.$route.name);
+    },
+    prev() {
+      return this.currentIndex > 0
+        ? this.links[this.currentIndex - 1]
+        : undefined;
+    },
+    next() {
+      return this.currentIndex < this.links.length - 1
+        ? this.links[this.currentIndex + 1]
+        : undefined;
+    },
   },
 };
 </script>
