@@ -48,7 +48,7 @@ export default {
   mounted() {
     this.$root.hcharts.chart('expend-data-chart', {
       chart: {
-        height: document.documentElement.clientHeight - 150,
+        height: document.querySelector('.screen').clientHeight - 150,
         plotBackgroundColor: null,
         plotBorderWidth: 0,
         plotShadow: false,

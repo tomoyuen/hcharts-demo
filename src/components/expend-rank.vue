@@ -53,7 +53,7 @@ export default {
   mounted() {
     this.$root.hcharts.chart('canvasDiv', {
       chart: {
-        height: document.documentElement.clientHeight * 0.7,
+        height: document.querySelector('.screen').clientHeight * 0.7,
         plotBackgroundColor: null,
         plotBorderWidth: 0,
         plotShadow: false,

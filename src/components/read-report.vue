@@ -28,7 +28,7 @@
   </div>
   <div class="countdown-box">
     <h2 class="title">待还书籍倒计时</h2>
-    <ui class="book-list">
+    <ul class="book-list">
       <li>
         <div class="rank">1</div>
         <h3 class="book">在您身边为您设计</h3>
@@ -49,7 +49,7 @@
         <h3 class="book">马克思主义哲学</h3>
         <div class="date">还书日期：2014-12-20</div>
       </li>
-    </ui>
+    </ul>
   </div>
   </div>
 </template>
@@ -61,7 +61,7 @@ export default {
   mounted() {
     this.$root.hcharts.chart('canvasDiv', {
       chart: {
-        height: document.documentElement.clientHeight * 0.7,
+        height: document.querySelector('.screen').clientHeight * 0.7,
         plotBackgroundColor: null,
         plotBorderWidth: 0,
         plotShadow: false,
