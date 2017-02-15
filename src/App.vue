@@ -88,6 +88,7 @@ export default {
     border-radius: 50%;
     border: 1px solid #fff;
     opacity: .7;
+    z-index: 10;
     &:before, &:after {
       content: '';
       position: absolute;
@@ -107,11 +108,25 @@ export default {
       right: 12px;
     }
     &.prev {
-      left: 200px;
+      left: calc(50% - 250px);
       transform: rotate(180deg);
     }
     &.next {
-      right: 200px;
+      right: calc(50% - 250px);
+    }
+    @media (--small-viewport) {
+      border-color: #333;
+      transform: scale(0.8);
+      &:before, &:after {
+        background: #333;
+      }
+      &.prev {
+        left: 2px;
+        transform: rotate(180deg) scale(0.8);
+      }
+      &.next {
+        right: 2px;
+      }
     }
   }
 </style>
