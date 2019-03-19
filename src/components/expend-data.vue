@@ -14,30 +14,31 @@
           </a>
         </li>
         <li>
-         <a href="#">
-          <p>超市</p>
-          <div class="data">23%</div>
-        </a>
-      </li>
-      <li>
-        <a href="#">
-          <p>餐厅</p>
-          <div class="data">15%</div>
-        </a>
-      </li>
-      <li>
-        <a href="#">
-          <p>饮品</p>
-          <div class="data">17%</div>
-        </a>
-      </li>
-      <li>
-        <a href="#">
-          <p>其他</p>
-          <div class="data">5%</div>
-        </a>
-      </li>
-    </ul>
+          <a href="#">
+            <p>超市</p>
+            <div class="data">23%</div>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <p>餐厅</p>
+            <div class="data">15%</div>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <p>饮品</p>
+            <div class="data">17%</div>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <p>其他</p>
+            <div class="data">5%</div>
+          </a>
+        </li>
+      </ul>
+    </div>
   </div>
 </template>
 
