@@ -5,61 +5,50 @@
   "author": "tomoyuen <wisyue@yahoo.com>",
   "private": true,
   "scripts": {
-    "dev": "node build/dev-server.js",
-    "build": "node build/build.js",
-    "lint": "eslint --ext .js,.vue src"
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint"
   },
   "dependencies": {
     "highcharts": "^7.0.3",
-    "vue": "^2.1.10",
-    "vue-router": "^2.2.0"
+    "vue": "^2.5.16",
+    "vue-router": "^3.1.2"
   },
   "devDependencies": {
-    "babel-core": "^6.22.1",
-    "babel-eslint": "^7.1.1",
-    "babel-loader": "^6.2.10",
-    "babel-plugin-transform-runtime": "^6.22.0",
-    "babel-preset-es2015": "^6.22.0",
-    "babel-preset-stage-2": "^6.22.0",
-    "babel-register": "^6.22.0",
-    "chalk": "^1.1.3",
-    "connect-history-api-fallback": "^1.3.0",
-    "css-loader": "^1.0.1",
-    "eslint": "^3.14.1",
-    "eslint-config-airbnb-base": "^11.0.1",
-    "eslint-friendly-formatter": "^2.0.7",
-    "eslint-import-resolver-webpack": "^0.8.1",
-    "eslint-loader": "^1.6.1",
-    "eslint-plugin-html": "^2.0.0",
-    "eslint-plugin-import": "^2.2.0",
-    "eventsource-polyfill": "^0.9.6",
-    "express": "^4.14.1",
-    "extract-text-webpack-plugin": "^2.0.0-rc.2",
-    "file-loader": "^0.10.0",
-    "friendly-errors-webpack-plugin": "^1.1.3",
-    "function-bind": "^1.1.0",
-    "html-webpack-plugin": "^2.28.0",
-    "http-proxy-middleware": "^0.19.1",
-    "opn": "^4.0.2",
-    "ora": "^1.1.0",
-    "postcss-cssnext": "^2.9.0",
-    "postcss-import": "^9.1.0",
-    "postcss-nested": "^1.0.0",
-    "postcss-quantity-queries": "^0.4.0",
-    "semver": "^5.3.0",
-    "shelljs": "^0.7.6",
-    "url-loader": "^1.1.2",
-    "vue-loader": "^10.3.0",
-    "vue-style-loader": "^2.0.0",
-    "vue-template-compiler": "^2.1.10",
-    "webpack": "^2.2.1",
-    "webpack-bundle-analyzer": "^3.3.2",
-    "webpack-dev-middleware": "^1.10.0",
-    "webpack-hot-middleware": "^2.16.1",
-    "webpack-merge": "^2.6.1"
+    "@vue/cli-plugin-babel": "^3.0.0",
+    "@vue/cli-plugin-eslint": "^3.0.0",
+    "@vue/cli-service": "^3.0.0",
+    "postcss-import": "^12.0.1",
+    "postcss-nested": "^4.1.2",
+    "postcss-preset-env": "^6.7.0",
+    "postcss-quantity-queries": "^0.5.0",
+    "vue-template-compiler": "^2.5.16"
   },
-  "engines": {
-    "node": ">= 4.0.0",
-    "npm": ">= 3.0.0"
-  }
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/essential",
+      "eslint:recommended"
+    ],
+    "rules": {},
+    "parserOptions": {
+      "parser": "babel-eslint"
+    }
+  },
+  "postcss": {
+    "plugins": {
+      "postcss-preset-env": {},
+      "postcss-import": {},
+      "postcss-nested": {},
+      "postcss-quantity-queries": {}
+    }
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not ie <= 8"
+  ]
 }

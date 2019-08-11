@@ -5,12 +5,10 @@ import Highcharts from 'highcharts';
 import App from './App';
 import router from './router';
 
-/* eslint-disable no-new */
+Vue.config.productionTip = false
+
 new Vue({
-  el: '#app',
   router,
-  template: '<App/>',
-  components: { App },
   data: {
     links: ['DeviceCount', 'downloadCount', 'expendData', 'expendRank', 'expendReport', 'expendReportWeekly',
       'gpaRank', 'hotRank', 'lendReport', 'messageCount', 'projectRank', 'readRank', 'readReport', 'recommendCount',
@@ -18,4 +16,5 @@ new Vue({
       'teacherExpend', 'teacherLend', 'userCount', 'versionCount', 'visitCount'],
     hcharts: Highcharts,
   },
-});
+  render: h => h(App)
+}).$mount('#app');
